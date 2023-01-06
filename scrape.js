@@ -60,7 +60,7 @@ const getCurrentPrices = async (lsize) => {
 //Home page
 
 app.get('/', (req, res) => {
-    res.status(200).send('<h1>Welcome to the ctypto api home page</h1>')
+    res.status(200).json({"top100": "/current-prices", "specificCoin":"/current-price/enterTheCoinName"})
 })
 
 //Curren prices of top 100 cryptos
